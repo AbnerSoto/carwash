@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>WildWater Express CarWash</title>
+	<title>Locations</title>
 	<script type="text/javascript" src="//use.typekit.net/ncu4wya.js"></script>
 	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	<link rel="stylesheet" href="css/colorbox.css">
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css"/>
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/locations.css">
 </head>
 
 <body>
@@ -38,56 +40,50 @@
 		</div>
 	</header>
 
-	<div class="slider">
-		<img src="images/slider.jpg">
-	</div>
-	<div class="row ourLocations">
+	<div class="row locationDetail">
 		<div class="container">
-			<h1 class="textCenter">Our Locations</h1>
+			<div class="locationTitle">
+				<h1>Buena Park, CA</h1>
+				<p>7995 Knott Ave
+					<br />Buena Park, CA 90620</p>
+			</div>
 			<div class="col1">
-				<div class="location">
-					<img src="images/locBuena.jpg" class="locImg">
-					<div class="locInfo">
-						<img src="images/yelp.png" height="40px" class="locIcons">
-						<a class="maps mapsGroup" href="#maps1_content">
-							<img src="images/mapIcon.png" height="40px" class="locIcons"></a>
-						<a class="locLinks" href="locations.html"><h2>Buena Park, CA</h2></a>
-						<p>On the corner of Knott &amp; LaPalma
-							<br />P:714.230.3974</p>
-						
-					</div>
+				<!-- Place somewhere in the <body> of your page -->
+				<div id="slider" class="flexslider">
+				  <ul class="slides">
+				    <li>
+				      <img src="images/slide4.jpg" />
+				    </li>
+				    <li>
+				      <img src="images/slide5.jpg" />
+				    </li>
+				    <li>
+				      <img src="images/slide6.jpg" />
+				    </li>
+				  </ul>
 				</div>
-				<div class="location">
-					<img src="images/locCosta.jpg" class="locImg">
-					<div class="locInfo">
-						<img src="images/yelp.png" height="40px" class="locIcons">
-						<a class="maps mapsGroup" href="#maps2_content"><img src="images/mapIcon.png" height="40px" class="locIcons"></a>
-						<h2>Costa Mesa, CA</h2>
-						<p>On the corner of Farview &amp; Baker
-							<br />P:714.230.3974</p>
-					</div>
+				<div id="carousel" class="flexslider">
+				  <ul class="slides">
+				    <li>
+				      <img src="images/slide4.jpg" />
+				    </li>
+				    <li>
+				      <img src="images/slide5.jpg" />
+				    </li>
+				    <li>
+				      <img src="images/slide6.jpg" />
+				    </li>
+				    <li>
+				  </ul>
 				</div>
 			</div>
 			<div class="col2">
-				<div class="location">
-					<img src="images/locHuntington.jpg" class="locImg">
-					<div class="locInfo">
-						<img src="images/yelp.png" height="40px" class="locIcons">
-						<a class="maps mapsGroup" href="#maps3_content"><img src="images/mapIcon.png" height="40px" class="locIcons"></a>
-						<h2>Huntington Beach, CA</h2>
-						<p>On the corner of Beach &amp; Warner
-							<br />P:714.230.3974</p>
-					</div>
-				</div>
-				<div class="location">
-					<img src="images/locSoon.jpg" class="locImg">
-					<div class="locInfo">
-						<h2>New Locations Coming Soon!</h2>
-					</div>
-				</div>
+				<img class="smallMap" src="images/mapSmall.jpg">
+				<a href="http://www.yelp.com/biz/wildwater-express-carwash-buena-park"><img src="images/yelp.png" height="40px" class="locIcons"></a>
 			</div>
 		</div>
 	</div>
+	
 	<div class="row services">
 		<div class="container">
 			<h1 class="textCenter">Our Services</h1>
@@ -210,6 +206,32 @@
 	</div>
 
 	<script src="js/build.js"></script>
+	<!-- FlexSlider -->
+	<script defer src="js/jquery.flexslider.js"></script>
+
+	<script type="text/javascript">
+	$(window).load(function() {
+	  // The slider being synced must be initialized first
+	  $('#carousel').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    itemWidth: 120,
+	    itemMargin: 5,
+	    asNavFor: '#slider'
+	  });
+	   
+	  $('#slider').flexslider({
+	    animation: "slide",
+	    controlNav: false,
+	    animationLoop: false,
+	    slideshow: false,
+	    sync: "#carousel"
+	  });
+	});
+	</script>
+	<!-- ColorBox -->
 	<script src="js/jquery.colorbox-min.js"></script>
 	<script>
 		$(document).ready(function(){
