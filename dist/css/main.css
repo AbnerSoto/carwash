@@ -76,11 +76,30 @@ header .col2 {
   clear: both;
 }
 /****************
-Slider
+Hero
 ****************/
-.slider img {
+.hero {
+  position: relative;
+}
+.hero img {
   width: 100%;
   min-width: 940px;
+}
+.hero h1 {
+  color: #fff;
+  font-weight: normal;
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  text-align: center;
+  margin-top: 85px;
+  font-size: 40px;
+}
+/************************
+Main Content on Sub Pages
+************************/
+.mainContent {
+  margin-top: 50px;
 }
 /****************
 Locations
