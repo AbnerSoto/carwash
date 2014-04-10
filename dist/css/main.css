@@ -351,8 +351,24 @@ Locations
   float: right;
   margin-right: 10px;
 }
+body #colorbox {
+  width: 745px !important;
+}
+body #cboxWrapper {
+  width: 745px !important;
+}
 body #cboxOverlay {
   background: #000;
+}
+body #cboxClose {
+  background-position: -75px 0px !important;
+  width: 45px !important;
+  height: 40px !important;
+  right: -20px !important;
+  top: -25px !important;
+}
+body #cboxClose:hover {
+  background-position: -75px -40px !important;
 }
 .locationsList {
   padding: 0;

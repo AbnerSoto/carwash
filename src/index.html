@@ -76,7 +76,7 @@
 						<a class="maps mapsGroup" href="#maps2_content">
 							<img src="images/mapIcon.png" height="40px" class="locIcons">
 						</a>
-						<a href="locationCosta.html">
+						<a class="locLinks" href="locationCosta.html">
 							<h2>Costa Mesa, CA</h2>
 						</a>
 						<p>On the corner of Farview &amp; Baker
@@ -94,7 +94,7 @@
 							<img src="images/yelp.png" height="40px" class="locIcons">
 						</a>
 						<a class="maps mapsGroup" href="#maps3_content"><img src="images/mapIcon.png" height="40px" class="locIcons"></a>
-						<a href="locationHuntington.html">
+						<a class="locLinks" href="locationHuntington.html">
 							<h2>Huntington Beach, CA</h2>
 						</a>
 						<p>On the corner of Beach &amp; Warner
@@ -250,7 +250,8 @@
 		$(document).ready(function(){
 			$(".mapsGroup").colorbox({
 				rel:'mapsGroup', transition:"fade",
-				inline:true, width:"50%"
+				inline:true, width:"50%",
+				closeButton:true
 			});
 		});
 	</script>
