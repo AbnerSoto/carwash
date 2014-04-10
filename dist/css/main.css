@@ -332,6 +332,7 @@ Locations
 .locInfo h2 {
   color: #006bba;
   margin: 0;
+  display: inline-block;
 }
 .locInfo .locLinks {
   text-decoration: none;

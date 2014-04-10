@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fundraising Application</title>
+	<script type="text/javascript" src="//use.typekit.net/ncu4wya.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body class="subPages">
+
+	<header class="row">
+		<div class="container">
+			<div class="col1">
+				<ul class="nav">
+					<li><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="fundraisers.html">FUNDAISERS</a></li>
+					<li><a href="environment.html">ENVIRONMENT</a></li>
+					<li><a href="faq.html">FAQ</a></li>
+					<li><a href="contact.html">CONTACT</a></li>
+				</ul>
+			</div>
+			<div class="col2">
+				<a href="https://www.facebook.com/WildWaterExpressCarwash?rf=224061724278864">
+					<img src="images/fb.jpg" class="floatRight">
+				</a>
+			</div>
+			<div class="col1">
+				<img src="images/wwlogo.png" class="logoImg">
+			</div>
+			<div class="col2 hours">
+					<ul>
+						<li><strong>Hours of Operations</strong></li>
+						<li>Daily 7am-8pm</li>
+						<li>Sunday 7am-7pm</li>
+					</ul>
+			</div>
+		</div>
+	</header>
+
+	<div class="hero">
+		<div class="heroTitle">
+			<h1 class="fundApplication">Fundraising Application</h1>
+		</div>
+		<img src="images/bannerStrip.jpg">
+	</div>
+	<div class="container mainContent">
+		<form name="fundraisingForm" method="post" onsubmit="return validateForm();">
+			Your Name: <input type="text" name="name" class="fyname" />
+			Name of Organization: <input type="text" name="orgName" class="forgname" />
+			City: <input type="text" name="city" class="fcity" />
+			State: <input type="text" name="state" class="fstate" />
+			Zip Code: <input type="text" name="zip" class="fzip" />
+			Email: <input type="email" name="email" id="femail" />
+			
+			<input type="submit" name="Submit" value="Continue" />         
+		</form>
+	</div>
+	<div class="row footer">
+		<div class="container">
+			<div class="col1">
+				<ul class="nav">
+					<li><a href="fundraisers.html">Fundraisers</a></li>
+					<li><a href="environment.html">Environment</a></li>
+				</ul>
+			</div>
+			<div class="col2">
+				<img src="images/waterSavers.jpg" class="centerBlock">
+				<p class="finePrint">&copy; 2014 WildWater Express Carwash. All Rights Reserved.</p>
+			</div>
+			<div class="col3">
+				<p class="textRight">Like us on&emsp;<a href="https://www.facebook.com/WildWaterExpressCarwash?rf=224061724278864">
+					<img src="images/fb.jpg" class="floatRight fbLink">
+				</a>
+				</p>
+			</div>
+		</div>
+	</div>
+
+	
+
+	<script src="js/build.js"></script>
+
+</body>
+
+</html>
