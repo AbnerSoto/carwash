@@ -1,0 +1,24 @@
+.subPages .hero .about {
+  margin-left: -100px;
+}
+.subPages .hero .fundraisers {
+  margin-left: -150px;
+}
+.subPages .hero .enviro {
+  margin-left: -150px;
+}
+.subPages .hero .contact {
+  margin-left: -120px;
+}
+.subPages .hero .faq {
+  margin-left: -60px;
+}
+.subPages h2 {
+  color: #006bba;
+}
+.subPages h3 {
+  color: #006bba;
+}
+.subPages h4 {
+  color: #006bba;
+}

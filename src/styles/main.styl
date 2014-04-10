@@ -1,4 +1,5 @@
-
+@import 'normalize'
+@import 'subpage'
 @import 'nib'
 
 body
@@ -33,51 +34,52 @@ Helper Classes
 /****************
 Header
 ****************/
-header .col1
-	width 80%
-	float left
-header .col2
-	width 20%
-	float left
+header 
+	.col1
+		width 80%
+		float left
+	.col2
+		width 20%
+		float left
+	.logoImg 
+		max-width 620px
+		float right
+	.hours ul 
+		padding 0
+		text-align right
+		list-style none
+		margin-top 10px
+		clear both
 .nav 
 	padding 0
 	float right
-.nav li
-	display block
-	float	left
-	list-style	none
-	margin-right 30px
-.nav a 
-	color #000
-	text-decoration none
-.nav a:hover 
-	text-decoration underline
-.logoImg 
-	max-width 620px
-	float right
-.hours ul 
-	padding 0
-	text-align right
-	list-style none
-	margin-top 10px
-	clear both
+	li
+		display block
+		float	left
+		list-style	none
+		margin-right 30px
+		a 
+			color #000
+			text-decoration none
+		a:hover 
+			text-decoration underline
+
 /****************
 Hero
 ****************/
 .hero
 	position relative
-.hero img
-	width 100%
-	min-width 940px
-.hero h1
-	color	white
-	font-weight normal
-	position absolute
-	left 50%
-	margin-left -100px
-	text-align center
-	margin-top 85px
-	font-size 40px
+	img
+		width 100%
+		min-width 940px
+	h1
+		color	white
+		font-weight normal
+		position absolute
+		left 50%
+		text-align center
+		margin-top 85px
+		font-size 40px
 /************************
 Main Content on Sub Pages
 ************************/
@@ -86,12 +88,13 @@ Main Content on Sub Pages
 /****************
 Locations
 ****************/
-.ourLocations .col1
-	width 50%
-	float left
-.ourLocations .col2
-	width 47%
-	float right
+.ourLocations 
+	.col1
+		width 50%
+		float left
+	.col2
+		width 47%
+		float right
 .location 
 	width 450px
 	margin-bottom 30px
@@ -103,39 +106,41 @@ Locations
 	margin-top -6px
 	border 1px solid #cecece
 	border-top none
-.locInfo h2
-	color #006bba
-	margin 0
-.locLinks 
-	text-decoration none
-.locLinks:hover
-	text-decoration underline
-	color #006bba
-.locInfo p 
-	margin 0
-	color #333333
+	h2
+		color #006bba
+		margin 0
+	.locLinks 
+		text-decoration none
+	.locLinks:hover
+		text-decoration underline
+		color #006bba
+	p 
+		margin 0
+		color #333333
+	.maps 
+		max-width 100%
 .locIcons 
 	float right
 	margin-right 10px
-.maps 
-	max-width 100%
+body #cboxOverlay
+	background #000
 .locationsList 
 	padding 0
 	float right
-.locationsList li
-	display block
-	float	left
-	list-style	none
-	margin-right 60px
-.locationsList li.active 
-	color #005798
-.locationsList > li:nth-child(4)
-	margin-right 0
-.locationsList a 
-	color #000
-	text-decoration none
-.locationsList a:hover 
-	text-decoration underline
+	li
+		display block
+		float	left
+		list-style	none
+		margin-right 27px
+	li.active 
+		color #005798
+	li:nth-child(4)
+		margin-right 0
+	a 
+		color #000
+		text-decoration none
+	a:hover 
+		text-decoration underline
 /****************
 Services
 ****************/
@@ -143,69 +148,69 @@ Services
 	background #eaeaea
 	padding-top	20px
 	padding-bottom 30px
-.services p 
-	width 660px
-	margin 0 auto
-	margin-bottom 20px
-.boxGroup
-	margin-left 50px
-.valueBox
-	width 220px
-	height 280px
-	padding 20px
-	float left
-	margin-right 30px
-	color white
-.valueBox h1
-	text-align center
-.boxGood
-	background #0f74bf
-.boxBetter
-	background #0a5c99
-.boxBest
-	background #02375e
+	p 
+		width 660px
+		margin 0 auto
+		margin-bottom 20px
+	.boxGroup
+		margin-left 50px
+		.valueBox
+			width 220px
+			height 280px
+			padding 20px
+			float left
+			margin-right 30px
+			color white
+		.valueBox h1
+			text-align center
+		.boxGood
+			background #0f74bf
+		.boxBetter
+			background #0a5c99
+		.boxBest
+			background #02375e
 /****************
 Video Section
 ****************/
 .videoSection 
 	padding-top 20px
 	padding-bottom 40px
-.videoSection .col1
-	width 375px
-	margin-left	20px
-	float left
-.videoSection .col2
-	width 515px
-	float right
-.videoSection .col1 h3 
-	color #005798
-.videoSection ul 
-	padding-left 20px
-.videoSection .listItem
-	color #555555
+	.col1
+		width 375px
+		margin-left	20px
+		float left
+	.col2
+		width 515px
+		float right
+	.col1 h3 
+		color #005798
+	ul 
+		padding-left 20px
+		.listItem
+			color #555555
 /****************
 Footer
 ****************/
 .footer 
 	background #eaeaea
 	padding-top 20px
-.footer .col1
-	width 30%
-	margin-top 45px
-	float left
-.footer .col2
-	width 40%
-	float left
-.footer .col3
-	width 30%
-	float right
-	margin-top 45px
-.footer .nav 
-	float left
-	margin-left 20px
-.finePrint 
-	text-align center
-	color #555555
-	font-size 12px
-.footer .fbLink
-	margin-top -7px
+	.col1
+		width 30%
+		margin-top 45px
+		float left
+	.col2
+		width 40%
+		float left
+	.col3
+		width 30%
+		float right
+		margin-top 45px
+	.nav 
+		float left
+		margin-left 20px
+	.finePrint 
+		text-align center
+		color #555555
+		font-size 12px
+	.fbLink
+		margin-top -7px

@@ -1,3 +1,207 @@
+/* normalize.css v3.0.0 | MIT License | git.io/normalize */
+html {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+body {
+  margin: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  vertical-align: baseline;
+}
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+[hidden],
+template {
+  display: none;
+}
+a {
+  background: transparent;
+}
+a:active,
+a:hover {
+  outline: 0;
+}
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+b,
+strong {
+  font-weight: bold;
+}
+dfn {
+  font-style: italic;
+}
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+mark {
+  background: #ff0;
+  color: #000;
+}
+small {
+  font-size: 80%;
+}
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+img {
+  border: 0;
+}
+svg:not(:root) {
+  overflow: hidden;
+}
+figure {
+  margin: 1em 40px;
+}
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+pre {
+  overflow: auto;
+}
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+button {
+  overflow: visible;
+}
+button,
+select {
+  text-transform: none;
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+input {
+  line-height: normal;
+}
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+input[type="search"] {
+  -webkit-appearance: textfield;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+legend {
+  border: 0;
+  padding: 0;
+}
+textarea {
+  overflow: auto;
+}
+optgroup {
+  font-weight: bold;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+td,
+th {
+  padding: 0;
+}
+.subPages .hero .about {
+  margin-left: -100px;
+}
+.subPages .hero .fundraisers {
+  margin-left: -150px;
+}
+.subPages .hero .enviro {
+  margin-left: -150px;
+}
+.subPages .hero .contact {
+  margin-left: -120px;
+}
+.subPages .hero .faq {
+  margin-left: -60px;
+}
+.subPages h2 {
+  color: #006bba;
+}
+.subPages h3 {
+  color: #006bba;
+}
+.subPages h4 {
+  color: #006bba;
+}
 body {
   background: #f4f4f4;
   color: #000;
@@ -47,6 +251,17 @@ header .col2 {
   width: 20%;
   float: left;
 }
+header .logoImg {
+  max-width: 620px;
+  float: right;
+}
+header .hours ul {
+  padding: 0;
+  text-align: right;
+  list-style: none;
+  margin-top: 10px;
+  clear: both;
+}
 .nav {
   padding: 0;
   float: right;
@@ -57,23 +272,12 @@ header .col2 {
   list-style: none;
   margin-right: 30px;
 }
-.nav a {
+.nav li a {
   color: #000;
   text-decoration: none;
 }
-.nav a:hover {
+.nav li a:hover {
   text-decoration: underline;
-}
-.logoImg {
-  max-width: 620px;
-  float: right;
-}
-.hours ul {
-  padding: 0;
-  text-align: right;
-  list-style: none;
-  margin-top: 10px;
-  clear: both;
 }
 /****************
 Hero
@@ -90,7 +294,6 @@ Hero
   font-weight: normal;
   position: absolute;
   left: 50%;
-  margin-left: -100px;
   text-align: center;
   margin-top: 85px;
   font-size: 40px;
@@ -130,10 +333,10 @@ Locations
   color: #006bba;
   margin: 0;
 }
-.locLinks {
+.locInfo .locLinks {
   text-decoration: none;
 }
-.locLinks:hover {
+.locInfo .locLinks:hover {
   text-decoration: underline;
   color: #006bba;
 }
@@ -141,12 +344,15 @@ Locations
   margin: 0;
   color: #333;
 }
+.locInfo .maps {
+  max-width: 100%;
+}
 .locIcons {
   float: right;
   margin-right: 10px;
 }
-.maps {
-  max-width: 100%;
+body #cboxOverlay {
+  background: #000;
 }
 .locationsList {
   padding: 0;
@@ -156,12 +362,12 @@ Locations
   display: block;
   float: left;
   list-style: none;
-  margin-right: 60px;
+  margin-right: 27px;
 }
 .locationsList li.active {
   color: #005798;
 }
-.locationsList > li:nth-child(4) {
+.locationsList li:nth-child(4) {
   margin-right: 0;
 }
 .locationsList a {
@@ -184,10 +390,10 @@ Services
   margin: 0 auto;
   margin-bottom: 20px;
 }
-.boxGroup {
+.services .boxGroup {
   margin-left: 50px;
 }
-.valueBox {
+.services .boxGroup .valueBox {
   width: 220px;
   height: 280px;
   padding: 20px;
@@ -195,16 +401,16 @@ Services
   margin-right: 30px;
   color: #fff;
 }
-.valueBox h1 {
+.services .boxGroup .valueBox h1 {
   text-align: center;
 }
-.boxGood {
+.services .boxGroup .boxGood {
   background: #0f74bf;
 }
-.boxBetter {
+.services .boxGroup .boxBetter {
   background: #0a5c99;
 }
-.boxBest {
+.services .boxGroup .boxBest {
   background: #02375e;
 }
 /****************
@@ -229,7 +435,7 @@ Video Section
 .videoSection ul {
   padding-left: 20px;
 }
-.videoSection .listItem {
+.videoSection ul .listItem {
   color: #555;
 }
 /****************
@@ -257,7 +463,7 @@ Footer
   float: left;
   margin-left: 20px;
 }
-.finePrint {
+.footer .finePrint {
   text-align: center;
   color: #555;
   font-size: 12px;
