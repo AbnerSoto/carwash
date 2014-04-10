@@ -353,10 +353,10 @@ Locations
   margin-right: 10px;
 }
 body #colorbox {
-  width: 745px !important;
+  width: 975px !important;
 }
 body #cboxWrapper {
-  width: 745px !important;
+  width: 975px !important;
 }
 body #cboxOverlay {
   background: #000;
@@ -374,12 +374,13 @@ body #cboxClose:hover {
 .locationsList {
   padding: 0;
   float: right;
+  padding-left: 20px;
 }
 .locationsList li {
   display: block;
   float: left;
   list-style: none;
-  margin-right: 27px;
+  margin-right: 90px;
 }
 .locationsList li.active {
   color: #005798;
